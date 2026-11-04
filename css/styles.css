@@ -74,7 +74,7 @@ p { margin: 0; }
 }
 .header .container { display: flex; align-items: center; gap: 32px; min-height: 76px; }
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo svg { width: 52px; height: 40px; flex: none; }
+.logo-mark { width: 48px; height: 48px; flex: none; object-fit: contain; }
 .logo-text { display: flex; flex-direction: column; line-height: 1; }
 .logo-text small { font-size: .74rem; font-weight: 800; letter-spacing: .02em; color: var(--blue-800); text-transform: uppercase; }
 .logo-text strong { font-size: 1.85rem; font-weight: 900; color: var(--blue-800); letter-spacing: -.01em; }
@@ -351,7 +351,7 @@ p { margin: 0; }
   .machinery .container.gallery { grid-template-columns: 1fr; gap: 24px; }
   .topbar .container { gap: 16px; justify-content: center; }
   .topbar .push { margin-left: 0; }
-  .logo svg { width: 42px; height: 32px; }
+  .logo-mark { width: 40px; height: 40px; }
   .logo-text strong { font-size: 1.5rem; }
   .logo-text small { font-size: .64rem; }
   .hero-ctas .btn { flex: 1 1 100%; }
