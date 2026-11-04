@@ -57,6 +57,7 @@
     <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></symbol>
     <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
     <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
     <!-- Service icons (two-tone) -->
     <symbol id="s-cuba" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path class="y" d="M5 14h30l-3.5 16a2 2 0 0 1-2 1.6h-19a2 2 0 0 1-2-1.6Z"/><path d="M3 14h34M13 19v8M20 19v8M27 19v8M11 14l2-5h14l2 5"/></symbol>
@@ -111,6 +112,7 @@
         <div class="hero-ctas">
           <a href="#contacto" class="btn btn-primary"><svg><use href="#i-doc"/></svg>Solicitar presupuesto</a>
           <a href="tel:+34670684128" class="btn btn-outline"><svg><use href="#i-phone"/></svg>Llamar ahora</a>
+          <a href="https://wa.me/34670684128?text=Hola%2C%20quiero%20pedir%20presupuesto" class="btn btn-whatsapp" target="_blank" rel="noopener"><svg><use href="#i-whatsapp"/></svg>WhatsApp</a>
         </div>
         <div class="hero-badges">
           <div class="badge"><svg><use href="#i-zap"/></svg><div><strong>Servicio rápido</strong><span>Nos adaptamos a tus plazos</span></div></div>
@@ -135,7 +137,7 @@
   <section class="section about" id="empresa">
     <div class="container">
       <div class="about-media reveal">
-        <img src="img/cubas-escombros-reciclaje.webp" alt="Cuba de Cubas Carrasco con escombros junto al camión en una planta de reciclaje" width="480" height="465" loading="lazy">
+        <img src="img/camion-cuba-amarilla.webp" alt="Camión de Transportes y Cubas Carrasco con cuba amarilla" width="1104" height="1425" loading="lazy">
         <div class="years"><b>30</b><span>años de<br>experiencia</span></div>
       </div>
       <div class="reveal">
@@ -162,6 +164,8 @@
       </div>
       <div class="grid-services">
         <article class="card reveal">
+          <img class="card-img" src="img/cuba-reforma-vivienda.webp" alt="Cuba de Cubas Carrasco colocada frente a una vivienda en reforma" width="480" height="465" loading="lazy" style="object-position: 50% 60%">
+          <div class="card-body">
           <div class="card-icon"><svg><use href="#s-cuba"/></svg></div>
           <div>
             <h3>Alquiler de cubas</h3>
@@ -169,69 +173,63 @@
             <span class="tag">Cubas de 4 m³</span><br>
             <a href="#contacto" class="card-link" data-service="Alquiler de cubas">Pedir presupuesto <svg><use href="#i-arrow"/></svg></a>
           </div>
+          </div>
         </article>
         <article class="card reveal">
+          <img class="card-img" src="img/retirada-escombros.webp" alt="Camión de Cubas Carrasco cargando una cuba llena de escombros" width="480" height="465" loading="lazy" style="object-position: 50% 55%">
+          <div class="card-body">
           <div class="card-icon"><svg><use href="#s-bricks"/></svg></div>
           <div>
             <h3>Retirada de escombros</h3>
             <p>Recogida y retirada de escombros de obras y reformas.</p>
             <a href="#contacto" class="card-link" data-service="Retirada de escombros">Pedir presupuesto <svg><use href="#i-arrow"/></svg></a>
           </div>
+          </div>
         </article>
         <article class="card reveal">
+          <img class="card-img" src="img/transporte-aridos-obra.webp" alt="Camión de Cubas Carrasco con cuba de áridos en una obra" width="480" height="465" loading="lazy" style="object-position: 50% 50%">
+          <div class="card-body">
           <div class="card-icon"><svg><use href="#s-truck"/></svg></div>
           <div>
             <h3>Transporte de materiales</h3>
             <p>Transporte de áridos, tierras, materiales de construcción y más.</p>
             <a href="#contacto" class="card-link" data-service="Transporte de materiales">Pedir presupuesto <svg><use href="#i-arrow"/></svg></a>
           </div>
+          </div>
         </article>
         <article class="card reveal">
+          <img class="card-img" src="img/camion-cuba-sm.jpg" alt="Camión de Cubas Carrasco con cuba azul cargada de escombros" width="790" height="800" loading="lazy" style="object-position: 40% 62%">
+          <div class="card-body">
           <div class="card-icon"><svg><use href="#s-recycle"/></svg></div>
           <div>
             <h3>Gestión de residuos</h3>
             <p>Tratamiento y gestión responsable de residuos de obra y otros materiales.</p>
             <a href="#contacto" class="card-link" data-service="Gestión de residuos">Pedir presupuesto <svg><use href="#i-arrow"/></svg></a>
           </div>
+          </div>
         </article>
         <article class="card reveal">
+          <img class="card-img" src="img/camion-plataforma-sm.jpg" alt="Camión plataforma de Transportes Carrasco para maquinaria" width="675" height="900" loading="lazy" style="object-position: 60% 50%">
+          <div class="card-body">
           <div class="card-icon"><svg><use href="#s-tractor"/></svg></div>
           <div>
             <h3>Transporte de maquinaria industrial y agrícola</h3>
             <p>Traslado de maquinaria industrial y/o agrícola en camión plataforma.</p>
             <a href="#contacto" class="card-link" data-service="Transporte de maquinaria industrial y/o agrícola">Pedir presupuesto <svg><use href="#i-arrow"/></svg></a>
           </div>
+          </div>
         </article>
         <article class="card reveal">
+          <img class="card-img" src="img/cuba-restos-poda.webp" alt="Cuba de Cubas Carrasco con restos de poda en un jardín" width="480" height="465" loading="lazy" style="object-position: 50% 60%">
+          <div class="card-body">
           <div class="card-icon"><svg><use href="#s-tree"/></svg></div>
           <div>
             <h3>Servicio para reformas y poda</h3>
             <p>Retirada de restos de poda, jardines y residuos de pequeñas reformas.</p>
             <a href="#contacto" class="card-link" data-service="Servicio para reformas y poda">Pedir presupuesto <svg><use href="#i-arrow"/></svg></a>
           </div>
+          </div>
         </article>
-      </div>
-      <div class="photo-strip reveal" aria-label="Fotos de nuestros trabajos">
-        <figure>
-          <img src="img/cuba-reforma-vivienda.webp" alt="Cuba de Cubas Carrasco colocada frente a una vivienda en reforma" width="480" height="465" loading="lazy" style="object-position: 50% 60%">
-          <figcaption>Alquiler de cubas</figcaption>
-        </figure>
-        <figure>
-          <img src="img/retirada-escombros.webp" alt="Camión de Cubas Carrasco cargando una cuba llena de escombros" width="480" height="465" loading="lazy" style="object-position: 50% 55%">
-          <figcaption>Retirada de escombros</figcaption>
-        </figure>
-        <figure>
-          <img src="img/transporte-aridos-obra.webp" alt="Camión de Cubas Carrasco con cuba de áridos en una obra" width="480" height="465" loading="lazy" style="object-position: 50% 55%">
-          <figcaption>Transporte de materiales</figcaption>
-        </figure>
-        <figure>
-          <img src="img/cuba-restos-poda.webp" alt="Cuba de Cubas Carrasco con restos de poda en un jardín" width="480" height="465" loading="lazy" style="object-position: 50% 60%">
-          <figcaption>Restos de poda</figcaption>
-        </figure>
-        <figure>
-          <img src="img/camion-cuba-amarilla.webp" alt="Camión de Transportes y Cubas Carrasco con cuba amarilla" width="1104" height="1425" loading="lazy" style="object-position: 60% 72%">
-          <figcaption>Nuestra flota</figcaption>
-        </figure>
       </div>
     </div>
   </section>
@@ -281,6 +279,7 @@
           <p>Cuéntanos qué necesitas y te enviaremos un presupuesto personalizado sin compromiso. Te asesoramos en la mejor solución para tu obra o proyecto.</p>
           <ul class="contact-list">
             <li><svg><use href="#i-phone"/></svg><a href="tel:+34670684128">670 684 128</a></li>
+            <li><svg><use href="#i-whatsapp"/></svg><a href="https://wa.me/34670684128?text=Hola%2C%20quiero%20pedir%20presupuesto" target="_blank" rel="noopener">WhatsApp: 670 684 128</a></li>
             <li><svg><use href="#i-mail"/></svg><a href="mailto:rafaelct75@hotmail.com">rafaelct75@hotmail.com</a></li>
             <li><svg><use href="#i-pin"/></svg>Sevilla y alrededores</li>
             <li><svg><use href="#i-clock"/></svg>Lunes a Viernes: 7:00 – 15:00</li>
@@ -359,6 +358,7 @@
       <h4>Contacto</h4>
       <ul class="contact-list">
         <li><svg><use href="#i-phone"/></svg><a href="tel:+34670684128">670 684 128</a></li>
+        <li><svg><use href="#i-whatsapp"/></svg><a href="https://wa.me/34670684128?text=Hola%2C%20quiero%20pedir%20presupuesto" target="_blank" rel="noopener">WhatsApp</a></li>
         <li><svg><use href="#i-mail"/></svg><a href="mailto:rafaelct75@hotmail.com">rafaelct75@hotmail.com</a></li>
         <li><svg><use href="#i-pin"/></svg>Sevilla y alrededores</li>
         <li><svg><use href="#i-clock"/></svg>Lunes a Viernes: 7:00 – 15:00</li>
@@ -377,6 +377,7 @@
   </div>
 </footer>
 
+<a href="https://wa.me/34670684128?text=Hola%2C%20quiero%20pedir%20presupuesto" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
 <a href="tel:+34670684128" class="fab-call" aria-label="Llamar al 670 684 128"><svg><use href="#i-phone"/></svg></a>
 
 <script src="js/main.js" defer></script>

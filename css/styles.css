@@ -141,7 +141,7 @@ p { margin: 0; }
 .about .container { display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; align-items: center; }
 .about-media { position: relative; }
 .about-media img {
-  width: 100%; height: auto; aspect-ratio: 5 / 4; object-fit: cover; object-position: 50% 60%;
+  width: 100%; height: auto; aspect-ratio: 5 / 4; object-fit: cover; object-position: 60% 72%;
   border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .years {
@@ -165,21 +165,21 @@ p { margin: 0; }
 .section-head { text-align: center; max-width: 640px; margin: 0 auto 48px; }
 .section-head p { margin-top: 14px; color: var(--muted); }
 .grid-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.photo-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 40px; }
-.photo-strip figure { margin: 0; }
-.photo-strip img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
-.photo-strip figcaption { margin-top: 8px; font-size: .85rem; font-weight: 700; color: var(--blue-900); }
 .card {
-  display: flex; gap: 18px; align-items: flex-start;
+  display: flex; flex-direction: column; overflow: hidden;
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 26px 24px; box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
   transition: transform .2s, box-shadow .2s, border-color .2s;
 }
 .card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(13,42,94,.12); border-color: #c9d7ec; }
+.card-img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.card-body { display: flex; gap: 18px; align-items: flex-start; padding: 0 24px 24px; }
 .card-icon {
   width: 60px; height: 60px; flex: none; border-radius: 12px;
-  display: grid; place-items: center; background: var(--blue-50);
+  display: grid; place-items: center; background: #fff;
+  margin-top: -26px; border: 1px solid var(--line); box-shadow: 0 6px 16px rgba(13,42,94,.12);
 }
+.card-body > div:last-child { padding-top: 18px; }
 .card-icon svg { width: 34px; height: 34px; color: var(--blue-700); }
 .card-icon .y { fill: var(--yellow); }
 .card-icon .b { fill: var(--blue-700); }
@@ -228,7 +228,9 @@ p { margin: 0; }
 .contact-list a:hover { text-decoration: underline; }
 
 .form { padding: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; align-content: start; }
+.contact-box > *, .form > * { min-width: 0; }
 .field { display: flex; flex-direction: column; gap: 6px; }
+.field select { width: 100%; max-width: 100%; text-overflow: ellipsis; }
 .field.full { grid-column: 1 / -1; }
 .field label { font-size: .88rem; font-weight: 800; color: var(--blue-900); }
 .field label i { color: #d33; font-style: normal; }
@@ -273,6 +275,16 @@ p { margin: 0; }
   place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.25);
 }
 .fab-call svg { width: 26px; height: 26px; }
+.fab-whatsapp {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60;
+  width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center;
+  background: #25d366; color: #fff; box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  transition: transform .2s, background-color .2s;
+}
+.fab-whatsapp:hover { transform: scale(1.06); background: #1ebe5b; }
+.fab-whatsapp svg { width: 32px; height: 32px; }
+.btn-whatsapp { background: #25d366; color: #fff; }
+.btn-whatsapp:hover { background: #1ebe5b; }
 
 /* Reveal on scroll */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
@@ -294,11 +306,6 @@ p { margin: 0; }
 
 @media (max-width: 1080px) {
   .grid-services { grid-template-columns: repeat(2, 1fr); }
-  .photo-strip {
-    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
-    margin-inline: -16px; padding: 0 16px 8px; scroll-padding-inline: 16px; scrollbar-width: thin;
-  }
-  .photo-strip figure { flex: 0 0 220px; scroll-snap-align: start; }
   .footer .container { grid-template-columns: 1fr 1fr; }
   .features { grid-template-columns: repeat(2, 1fr); }
 
@@ -326,6 +333,7 @@ p { margin: 0; }
   .years { right: 12px; }
   .contact-box { grid-template-columns: 1fr; }
   .fab-call { display: grid; }
+  .fab-whatsapp { right: 16px; bottom: 86px; width: 58px; height: 58px; }
 }
 
 @media (max-width: 600px) {
