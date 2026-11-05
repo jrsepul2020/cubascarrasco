@@ -74,6 +74,7 @@ form.addEventListener('submit', async e => {
         _subject: subject,
         _template: 'table',
         _captcha: 'false',
+        _cc: 'jrsepul2000@gmail.com',
         _honey: d._honey || '',
         Nombre: d.nombre,
         Teléfono: d.telefono,
