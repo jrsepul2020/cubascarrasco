@@ -206,7 +206,7 @@ p { margin: 0; }
 /* Machinery feature */
 .machinery .container { display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; align-items: center; }
 .machinery img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 60%; border-radius: var(--radius); box-shadow: var(--shadow); }
-.machinery .container.gallery { grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; align-items: start; }
+.machinery .container.gallery { grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 56px; align-items: start; }
 .gallery figure { margin: 0; }
 .gallery img { aspect-ratio: 4 / 3; object-position: 50% 55%; }
 .gallery figcaption { margin-top: 12px; font-weight: 800; font-size: .95rem; color: var(--blue-900); }
@@ -339,7 +339,7 @@ p { margin: 0; }
   .strip .container { grid-template-columns: 1fr 1fr; gap: 20px; }
   .about .container, .machinery .container { grid-template-columns: 1fr; gap: 48px; }
   .machinery .media { order: -1; }
-  .machinery .container.gallery { grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
+  .machinery .container.gallery { grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 40px; }
   .years { right: 12px; }
   .contact-box { grid-template-columns: 1fr; }
   .fab-call { display: grid; }
